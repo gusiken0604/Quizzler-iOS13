@@ -31,7 +31,6 @@ struct QuizBrain {
 
     
     
-    
     func getQuestionText() -> String {
         return quiz[questionNumber].text
     }
@@ -44,9 +43,6 @@ struct QuizBrain {
         return Float (questionNumber) / Float(quiz.count)
     }
     
-    mutating func getScore() -> Int {
-        return score
-    }
     
     mutating func nextQuestion() {
         if questionNumber + 1 < quiz.count {
